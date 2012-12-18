@@ -12,7 +12,7 @@ Welcome to the lms4labs project documentation.
    :width: 200 px
    :align: center
 
-(yeah, we don't like the logo either; if you have a better proposal contact us ;-) )
+(yeah, `we don't like the logo either <https://github.com/lms4labs/labmanager/issues/11>`_; if you have a better proposal contact us ;-) )
 
 .. include:: contents.rst.inc
 
