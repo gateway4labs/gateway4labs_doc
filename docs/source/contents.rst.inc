@@ -1,7 +1,7 @@
 .. note::
 
-	We're restructuring the documentation. This is just a doc
-	proposal at this stage. We've written in italics what each
+    We\'re restructuring the documentation. This is just a doc
+    proposal at this stage. We\'ve written in italics what each
     section should contain, and the already indexed contents are
     those which were already written, but probably will need to be 
     rewritten.
@@ -22,8 +22,8 @@ the rationale, the features, but should not contains deployment, etc*
    design
 
 
-User's Guide
-------------
+User\'s Guide
+-------------
 
 *This section should contains how to deploy each system. For the 
 LabManager, what options are there available, etc., and how to
@@ -49,6 +49,7 @@ doc of each LMS plug-in repository*
 .. toctree::
    :maxdepth: 2
 
+   usage_lms_intro
    usage_lms_admin
 
 Remote laboratory administrators
