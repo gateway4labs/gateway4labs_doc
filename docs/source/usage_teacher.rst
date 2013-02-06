@@ -1,6 +1,9 @@
-Usage: teachers
-~~~~~~~~~~~~~~~
+Usage: Moodle
+~~~~~~~~~~~~~
 
+****************
+1. SCORM Package
+****************
 A teacher needs a SCORM object per laboratory. So as to gather it, the LMS
 administrator needs to provide the SCORM object to the teacher. The teacher can
 optionally modify it (adding laboratory information, course information, etc.).
@@ -34,3 +37,40 @@ reservation will be performed, and the student can open the reservation:
    :width: 500px
    :align: center
 
+
+**********
+2. IMS LTI
+**********
+Once the Moodle Administrator added a Lab Manager as an external tool, it can be added to
+the courses.
+
+You need to go into the course and click the "*Turn editing on*" button on the
+top right.
+
+Then click on the "Add an activity or resource" on the section of the course
+where the laboratory will be used. Select the "External Tool" option and click
+the "Add" button.
+
+.. image:: /_static/moodle_2_3_lti_add_to_course.png
+   :align: center
+   :width: 500px
+
+Fill out the form and select the Lab Manager installation you want to add in
+the "External tool type" field. Notice that the options listed here are the
+names of the Lab Manager installations you added previously. So adding a it is
+always better to add a descriptive name when adding the Lab Manager tool.
+
+You may leave the "Launch URL" blank, since the one from the selected tool will
+be used.
+
+.. image:: /_static/moodle_2_3_lti_add_to_course_form.png
+   :align: center
+   :width: 500px
+
+Click the "Save and return to course" button and you should see the activity
+in the section of the course. If you click it, it will go to the Lab Manager
+and ask for the laboratory.
+
+.. warning::
+
+  TODO: Finish this. How are we going to manage the first launch? -NHI
