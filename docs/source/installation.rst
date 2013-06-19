@@ -1,11 +1,12 @@
 .. _toctree-directive:
 
+
 Installation
 ============
 
 Within the lms4labs project, two main components need to be installed:
  * The LabManager, which is the software system 
- * The LMS plug-in (see the Usage section of Moodle for Moodle)
+ * The LMS plug-in (only if a LMS that does not support LTI is installed)
 
 Cardinality:
  * There should be a LabManager representing each university or secondary
@@ -189,8 +190,8 @@ application.
 First of all, download the source code of the lms4labs project and go to the
 labmanager code::
 
-    $ git clone https://github.com/porduna/lms4labs/
-    $ cd lms4labs/labmanager
+    $ git clone https://github.com/lms4labs/labmanager/
+    $ cd labmanager
 
 Then, create an environment called *env* in the same directory where the
 labmanager is installed, and activate it::
@@ -289,17 +290,17 @@ documented `here
 is installed in Apache, the following configuration may work::
 
     WSGIDaemonProcess labmanager user=weblab group=weblab threads=5 python-path=/PATH/TO/ENV/lib/pythonVERSION/site-packages/
-    WSGIScriptAlias /lms4labs /PATH/TO/lms4labs/labmanager/run_wsgi.wsgi
+    WSGIScriptAlias /labmanager /PATH/TO/labmanager/run_wsgi.wsgi
     WSGIRestrictStdout Off
     WSGIPassAuthorization On
 
-    <Directory /PATH/TO/lms4labs/labmanager/>
+    <Directory /PATH/TO/labmanager/>
         WSGIProcessGroup labmanager
         WSGIApplicationGroup %{GLOBAL}
         Order deny,allow
         Allow from all
     </Directory>
 
-Being /PATH/TO/lms4labs/ the lms4labs root project. Additionally, you will need
+Being /PATH/TO/labmanager/ the labmanager root project. Additionally, you will need
 to modify the *run_wsgi.wsgi* script to change the project directory.
 

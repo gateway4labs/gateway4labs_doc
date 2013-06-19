@@ -19,12 +19,18 @@ The LabManager administrator will interact with the remote laboratory
 administrators to make sure that they are connected to the LabManager. He will
 also sign up different Learning Management Systems from different entities.
 
-The LMS administrator will integrate the LMS with a LabManager. In the
-LabManager, it will select which laboratories are available for each course. It
-will download SCORM objects that he will give to teachers.
-
-Finally, teachers will upload SCORM objects to their courses, where all students
-using that course will be able to use the laboratory.
+The LMS administrator will manage from the LMS to students. There are two
+versions at this moment:
+* When using LTI, the LMS administrator will create teacher users in the LabManager,
+  and assign them permissions on laboratories. Teachers will use these
+  permissions (which contain a key and a secret unique for each teacher and
+  laboratory) to add those labs to their courses. Students of those courses will
+  automatically be able to use these laboratories.
+* When using Basic HTTP, the LMS administrator will query courses in the
+  LMS/CMS/PLE, and they will assign permissions to those courses. From that
+  point, teachers will be able to upload SCORM objects refering to those courses
+  and upload them to the LMS/CMS/PLE. From that point, students of those courses
+  will be able to use them.
 
 Architecture overview
 ~~~~~~~~~~~~~~~~~~~~~
@@ -35,8 +41,9 @@ Architecture overview
 
 As described in the figure above, there are three main components involved:
 
-#. The LMS, which will have a small plug-in that communicates with the
-   LabManager.
+#. The LMS/CMS/PLE (left side). If it supports IMS LTI, it will use it and no
+   code will be required in the LMS/CMS/PLE. If it does not support it, it will
+   have a small plug-in that communicates with the LabManager.
 
 #. The LabManager, which will receive requests from multiple, different LMSs and
    it will understand the protocols of different RLMSs. It does not have any
@@ -47,10 +54,11 @@ As described in the figure above, there are three main components involved:
    different. It should not require anything special for being supported by the
    LabManager.
 
-This way, if a new LMS is aimed, a new plug-in for that LMS is required in the
+This way, if a new LMS/CMS/PLE is aimed, if it supports IMS LTI the support is
+automatic. If it does not support it, a new plug-in for that LMS is required in the
 LMS, but it has no impact on the rest of the RLMSs neither on the LabManager. If
 a new RLMS is aimed, a new plug-in for that RLMS is required in the LabManager,
-but it has no impact on the LMSs.
+but it has no impact on the LMSs/CMSs/PLEs.
 
 .. 
     Let's detail a typical scenario. *University A* uses Moodle (LMS), WebLab-Deusto
@@ -168,7 +176,7 @@ but it has no impact on the LMSs.
 LMS to LabManager protocol
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Sample reservation request::
+This only applies when the non IMS LTI version is targeted. Sample reservation request::
 
     POST /lms4labs/labmanager/requests/ HTTP/1.0
     Authorization: Basic ASDFASDF (LMS token)
