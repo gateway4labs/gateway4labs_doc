@@ -85,6 +85,15 @@ those versions are managed in that particular directory, so you can later delete
 it, upgrade only that one, and especially, create other environments for other
 applications.
 
+.. warning::
+
+    In some scenarios, using virtualenv causes certain problems (when trying to
+    instantiate a virtual environment fails, etc.). While using virtualenvs is
+    highly recommended, it is still optional, so if you're running into problems
+    and you can't advance, you can go ahead and install the libraries in your 
+    system directly without any virtualenv.
+
+
 The way to use it is very simple. First you need to install virtualenv, using
 pip::
 
@@ -205,6 +214,23 @@ Install all the requirements. They are detailed requirements.txt file, so you
 can install them all by running::
 
     $ pip install -r requirements.txt
+
+.. warning::
+
+    In Microsoft Windows, some libraries are not installed automatically unless
+    you have installed a proper development environment. If you're running
+    Microsoft Windows, you need to download and install manually (if you've 
+    installed Python 2.7 for 32 bits, you'll need to install the file that is 
+    called *whatever-win32-python2.7.exe* or so):
+
+     * `lxml <https://pypi.python.org/pypi/lxml/3.2.1#downloads>`_
+     * `PyCrypto <http://www.voidspace.org.uk/python/modules.shtml#pycrypto>`_
+     * `PyYAML <https://pypi.python.org/pypi/PyYAML#downloads>`_
+
+    Once installed, then run the command::
+
+      C:\...\> pip install -r requirements.txt
+    
 
 At this point, everything is ready to be deployed. First, we should add the
 configuration file. A sample one is distributed, so you can copy it::
