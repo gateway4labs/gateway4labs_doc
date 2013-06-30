@@ -8,7 +8,7 @@ In lms4labs there are the following roles:
 
 #. Remote laboratory administrator
 #. LabManager administrator
-#. LMS administrator
+#. LMS/CMS/PLE administrator
 #. Teacher
 #. Student
 
@@ -19,9 +19,9 @@ The LabManager administrator will interact with the remote laboratory
 administrators to make sure that they are connected to the LabManager. He will
 also sign up different Learning Management Systems from different entities.
 
-The LMS administrator will manage from the LMS to students. There are two
+The LMS/CMS/PLE administrator will manage from the LMS/CMS/PLE to students. There are two
 versions at this moment:
-* When using LTI, the LMS administrator will create teacher users in the LabManager,
+* When using LTI, the LMS/CMS/PLE administrator will create teacher users in the LabManager,
   and assign them permissions on laboratories. Teachers will use these
   permissions (which contain a key and a secret unique for each teacher and
   laboratory) to add those labs to their courses. Students of those courses will

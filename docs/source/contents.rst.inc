@@ -39,12 +39,12 @@ Labmanager administrators
    installation
    usage_labmanager_admin
 
-LMS administrators
+PLE/LMS/PLE administrators
 ``````````````````
 
 *A document for each supported LMS -e.g. any LTI, Moodle <= 2.1 through plug-in,
 Moodle 1.9 through plug-in, .LRN, etc. I would be fine with refering to the
-doc of each LMS plug-in repository*
+doc of each LMS/CMS/PLE plug-in repository*
 
 .. toctree::
    :maxdepth: 2
@@ -89,8 +89,8 @@ RLMS developers
    :maxdepth: 2
 
 
-LMS developers
-``````````````
+LMS/CMS/PLE developers
+``````````````````````
 
 .. toctree::
    :maxdepth: 2
