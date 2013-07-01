@@ -4,7 +4,7 @@
 Installation
 ============
 
-Within the lms4labs project, two main components need to be installed:
+Within the gateway4labs project, two main components need to be installed:
  * The LabManager, which is the software system 
  * The LMS plug-in (only if a LMS that does not support LTI is installed)
 
@@ -196,10 +196,10 @@ In this section, it is assumed that you already have installed pip and
 virtualenv, and that you have notions of how you want to deploy the Lms4labs
 application.
 
-First of all, download the source code of the lms4labs project and go to the
+First of all, download the source code of the gateway4labs project and go to the
 labmanager code::
 
-    $ git clone https://github.com/lms4labs/labmanager/
+    $ git clone https://github.com/gateway4labs/labmanager/
     $ cd labmanager
 
 Then, create an environment called *env* in the same directory where the
@@ -300,8 +300,8 @@ for details, but this is an example of configuration (once the module has been
 enabled)::
 
     ProxyVia On
-    ProxyPass        /lms4labs http://localhost:8080/lms4labs
-    ProxyPassReverse /lms4labs http://localhost:8080/lms4labs
+    ProxyPass        /gateway4labs http://localhost:8080/gateway4labs
+    ProxyPassReverse /gateway4labs http://localhost:8080/gateway4labs
 
 The other approach is using WSGI in the web server. Refer to the `Flask
 documentation on how to deploy it <http://flask.pocoo.org/docs/deploying/>`_. In

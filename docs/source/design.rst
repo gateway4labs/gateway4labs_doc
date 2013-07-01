@@ -4,7 +4,7 @@ Design overview
 Roles
 ~~~~~
 
-In lms4labs there are the following roles:
+In gateway4labs there are the following roles:
 
 #. Remote laboratory administrator
 #. LabManager administrator
@@ -65,11 +65,11 @@ but it has no impact on the LMSs/CMSs/PLEs.
     (RLMS 1) and MIT iLabs (RLMS 2). They will deploy a LabManager in
     *labmanager.universitya.edu*.
 
-    Then, they will install the lms4labs plug-in for Moodle in their Moodle system.
+    Then, they will install the gateway4labs plug-in for Moodle in their Moodle system.
     While installing the plug-in, they will have to configure three arguments:
 
     #. LabManager URL, pointing to the Lab Manager. Example:
-       *http://labmanager.universitya.edu/lms4labs/*
+       *http://labmanager.universitya.edu/gateway4labs/*
     #. LabManager credentials, which will be used by the LabManager to
        identify itself in the LabManager. Example: 'lm_uniA' and password:
        'imthelabmanager'.
@@ -90,7 +90,7 @@ but it has no impact on the LMSs/CMSs/PLEs.
 
     Once a LMS has permissions to use certain RLMSs through the LabManager, the LMS
     can access the LabManager and select which courses are used in the LMS. In order
-    to do this, the LabManager will query a web service provided by the lms4labs
+    to do this, the LabManager will query a web service provided by the gateway4labs
     plug-in for Moodle. The plug-in will return the list of courses created in 
     moodle.
 
@@ -124,7 +124,7 @@ but it has no impact on the LMSs/CMSs/PLEs.
         <!DOCTYPE html>
         <html lang="en">
         <head>
-            <script src="lms4labs.js" type="text/javascript"></script>
+            <script src="gateway4labs.js" type="text/javascript"></script>
 
             <script>
                 function startLab() {
@@ -141,13 +141,13 @@ but it has no impact on the LMSs/CMSs/PLEs.
             </script>
         </head>
         <body onload="javascript:startLab();">
-            <div id="lms4labs_root"></div>
+            <div id="gateway4labs_root"></div>
         </body>
         </html>
 
-    In this case, the *load("robot")* method will call the lms4labs Moodle plug-in,
+    In this case, the *load("robot")* method will call the gateway4labs Moodle plug-in,
     requesting a reservation for the laboratory identified by *'robot'*. The
-    lms4labs plug-in will check who is the user (he must be logged in) and send the
+    gateway4labs plug-in will check who is the user (he must be logged in) and send the
     user and the courses where the user is enrolled to the LabManager. The
     LabManager will check what is that identifier for that LMS (e.g. *'robot'* is
     the *robot@Robot experiments* laboratory of the WebLab-Deusto deployed in the
@@ -156,7 +156,7 @@ but it has no impact on the LMSs/CMSs/PLEs.
     LabManager will perform the request to the RLMS, and will forward the
     reservation to the LMS. There, the JavaScript library will load the laboratory:
 
-    .. image:: /_static/lms4labs_lms.png
+    .. image:: /_static/gateway4labs_lms.png
        :width: 500px
        :align: center
 
@@ -164,7 +164,7 @@ but it has no impact on the LMSs/CMSs/PLEs.
 
     #. The LabManager has a plug-in for each RLMS which interacts with the RLMS.
     #. The LabManager contacts the LMS with a generic API. This API is implemented
-       by the lms4labs plug-in of the LMS (e.g. a Moodle plug-in). It uses it to
+       by the gateway4labs plug-in of the LMS (e.g. a Moodle plug-in). It uses it to
        retrieve the list of courses.
     #. The LMS contacts the LabManager to perform a reservation request.
     #. The LMS contacts the LabManager to perform an authentication request: the LMS
@@ -178,7 +178,7 @@ LMS to LabManager protocol
 
 This only applies when the non IMS LTI version is targeted. Sample reservation request::
 
-    POST /lms4labs/labmanager/requests/ HTTP/1.0
+    POST /gateway4labs/labmanager/requests/ HTTP/1.0
     Authorization: Basic ASDFASDF (LMS token)
 
     {
@@ -199,9 +199,9 @@ This only applies when the non IMS LTI version is targeted. Sample reservation r
 
 Sample authentication request::
 
-    GET /lms4labs/lms/authenticate HTTP/1.0
+    GET /gateway4labs/lms/authenticate HTTP/1.0
 
-    POST /lms4labs/labmanager/lms/admin/authenticate/ HTTP/1.0
+    POST /gateway4labs/labmanager/lms/admin/authenticate/ HTTP/1.0
     Authorization: Basic ASDFASDF (LMS token)
 
     {
@@ -210,7 +210,7 @@ Sample authentication request::
 
 Sample course listing request (q=text to filter, start=0 to go to the first page)::
 
-    GET /lms4labs/lms/list?q=elect&start=0 HTTP/1.1
+    GET /gateway4labs/lms/list?q=elect&start=0 HTTP/1.1
     Authorization: Basic ASDFASDF (LabManager token)
 
 Sample course listing response::

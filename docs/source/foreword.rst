@@ -1,7 +1,7 @@
 Foreword
 ========
 
-lms4labs is a pragmatic approach targeting the integration of multiple RLMSs
+gateway4labs is a pragmatic approach targeting the integration of multiple RLMSs
 (Remote Laboratory Management Systems) in different digital learning
 environments, such as Learning Management Systems (LMSs), Content Management
 Systems (CMSs) or Personal Learning Environments (PLEs). There are few
@@ -20,7 +20,7 @@ principles:
    <http://shibboleth.net/>`_- or directory protocols -such as LDAP- to
    secondary schools with almost no IT infrastructure.
 
-5. IT services of entities deploying lms4labs must be able to audit quickly
+5. IT services of entities deploying gateway4labs must be able to audit quickly
    whatever involves the LMS/CMS/PLE.
 
 6. It must work with multiple RLMSs, so they can collaborate towards the same

@@ -7,7 +7,7 @@ it, and assigning remote laboratories to each LMS.
 
 So as to enter in the LabManager, click on the link in the middle in the front page:
 
-.. image:: /_static/l4l_frontpage.png
+.. image:: /_static/g4l_frontpage.png
    :width: 500px
    :align: center
 
@@ -72,11 +72,11 @@ LMS. When creating it, in the case of using the Basic HTTP approach (as opposed
 to the IMS LTI approach), you will need to add credentials. These include: LMS
 login (the username that the LMS will use in the LabManager), LMS password (the
 password used by the LMS in the LabManager), the LMS URL (pointing to the
-lms4labs/list method), and the username and password of the LabManager in the
+gateway4labs/list method), and the username and password of the LabManager in the
 LMS. The URL will be a URL pointing to the listing service. For
 instance, in Moodle, it will point to something like:
 
-   http://localhost/lms/moodle/2.3/blocks/lms4labs/lms/list.php
+   http://localhost/lms/moodle/2.3/blocks/gateway4labs/lms/list.php
 
 
 .. image:: /_static/labmanager_admin_lms_list.png

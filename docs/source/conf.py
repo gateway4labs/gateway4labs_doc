@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# lms4labs documentation build configuration file, created by
+# gateway4labs documentation build configuration file, created by
 # sphinx-quickstart on Mon Jul 23 11:41:08 2012.
 #
 # This file is execfile()d with the current directory set to its containing dir.
@@ -40,8 +40,8 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'lms4labs'
-copyright = u'2012, lms4labs team'
+project = u'gateway4labs'
+copyright = u'2012, gateway4labs team'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -97,9 +97,9 @@ sys.path.append(os.path.abspath('source/_themes'))
 html_theme_path = ['_themes']
 html_theme = 'sphinx-theme-okfn'
 html_theme_options = {
-        'logo_icon': '_static/logo-l4l.png',
+        'logo_icon': '_static/logo-g4l.png',
         'show_okfn_logo' : False,
-        'git_repo' : 'http://github.com/lms4labs/',
+        'git_repo' : 'http://github.com/gateway4labs/',
 #        'google_analytics_id': '',
 }
 
@@ -181,7 +181,7 @@ html_show_sourcelink = True
 #html_file_suffix = None
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'lms4labsdoc'
+htmlhelp_basename = 'gateway4labsdoc'
 
 
 # -- Options for LaTeX output --------------------------------------------------
@@ -200,8 +200,8 @@ latex_elements = {
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
-  ('index', 'lms4labs.tex', u'lms4labs Documentation',
-   u'lms4labs team', 'manual'),
+  ('index', 'gateway4labs.tex', u'gateway4labs Documentation',
+   u'gateway4labs team', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
@@ -230,8 +230,8 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'lms4labs', u'lms4labs Documentation',
-     [u'lms4labs team'], 1)
+    ('index', 'gateway4labs', u'gateway4labs Documentation',
+     [u'gateway4labs team'], 1)
 ]
 
 # If true, show URL addresses after external links.
@@ -244,8 +244,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  ('index', 'lms4labs', u'lms4labs Documentation',
-   u'lms4labs team', 'lms4labs', 'One line description of project.',
+  ('index', 'gateway4labs', u'gateway4labs Documentation',
+   u'gateway4labs team', 'gateway4labs', 'One line description of project.',
    'Miscellaneous'),
 ]
 
@@ -262,10 +262,10 @@ texinfo_documents = [
 # -- Options for Epub output ---------------------------------------------------
 
 # Bibliographic Dublin Core info.
-epub_title = u'lms4labs'
-epub_author = u'lms4labs team'
-epub_publisher = u'lms4labs team'
-epub_copyright = u'2012, lms4labs team'
+epub_title = u'gateway4labs'
+epub_author = u'gateway4labs team'
+epub_publisher = u'gateway4labs team'
+epub_copyright = u'2012, gateway4labs team'
 
 # The language of the text. It defaults to the language option
 # or en if the language is not set.

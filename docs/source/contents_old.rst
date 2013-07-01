@@ -6,7 +6,7 @@
 User's Guide
 ------------
 
-This part of the documentation begins with some background information about lms4labs, 
+This part of the documentation begins with some background information about gateway4labs, 
 a step-by-step instructions for deploying it, and additional notes on how to add more 
 RLMSs to it.
 

@@ -8,7 +8,7 @@ called Basic HTTP and relies on a separate module/block developed for each speci
 
 In any case, you need to log in as a LMS administrator. So in the root of the LabManager, click on the link in the right at the front page:
 
-.. image:: /_static/l4l_frontpage.png
+.. image:: /_static/g4l_frontpage.png
    :width: 500px
    :align: center
 
