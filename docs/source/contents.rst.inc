@@ -38,6 +38,7 @@ Labmanager administrators
 
    installation
    usage_labmanager_admin
+   installation_debug
 
 PLE/LMS/PLE administrators
 ``````````````````
