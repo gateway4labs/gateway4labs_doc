@@ -68,7 +68,7 @@ By following the previous steps the application is running with the built-in Pyt
 
     Follow the installation guide `here <http://pydev.org/manual_101_install.html>`_.
 
-3. Make your Eclipse work with virtualenv (full instructions in Spanish here). NOTE: This assumes your are working in a virtualenv, skip this point otherwise.
+3. Make your Eclipse work with virtualenv (full instructions in Spanish `here <http://www.cuble.es/integrar-virtualenv-con-eclipse-pydev>`_). NOTE: This assumes your are working in a virtualenv, skip this point otherwise.
 
 	a. Once you have a Eclipse project created based on PyDev, right-click on the project and select "Properties".
 
