@@ -89,6 +89,8 @@ RLMS developers
 .. toctree::
    :maxdepth: 2
 
+   rlms_developers
+
 
 LMS/CMS/PLE developers
 ``````````````````````
