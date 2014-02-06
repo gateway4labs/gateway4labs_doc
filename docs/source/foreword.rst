@@ -44,7 +44,7 @@ However:
   instance, instructors may want to establish which weeks lab sessions are
   available and which ones are not.
 
-Therefore, we accept that there is some LMS/CMS/PEL-dependent code as the lesser
+Therefore, we accept that there is some LMS/CMS/PLE-dependent code as the lesser
 of two evils, and only if it is required. However, so as to support the
 principles mentioned above, this code:
 
