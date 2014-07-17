@@ -4,7 +4,7 @@
    contain the root `toctree` directive.
 
 Welcome to gateway4labs's documentation!
-====================================
+========================================
 
 Welcome to the gateway4labs project documentation.
 
@@ -12,7 +12,10 @@ Welcome to the gateway4labs project documentation.
    :width: 200 px
    :align: center
 
-(yeah, `we don't like the logo either <https://github.com/gateway4labs/labmanager/issues/11>`_; if you have a better proposal contact us ;-) )
+.. rst-class:: centered
+
+   (`Want to propose a nicer logo? <https://github.com/gateway4labs/labmanager/issues/11>`_)
+
 
 .. include:: contents.rst.inc
 

@@ -41,7 +41,7 @@ Labmanager administrators
    installation_debug
 
 PLE/LMS/PLE administrators
-``````````````````
+``````````````````````````
 
 *A document for each supported LMS -e.g. any LTI, Moodle <= 2.1 through plug-in,
 Moodle 1.9 through plug-in, .LRN, etc. I would be fine with refering to the
@@ -105,7 +105,4 @@ LabManager developers
 .. toctree::
    :maxdepth: 2
 
-
-
-See :ref:`the old documentation <contents_old>` to see the previous contents.
 
