@@ -91,21 +91,20 @@ pygments_style = 'sphinx'
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-#html_theme = 'sphinxdoc'
+html_theme = 'sphinxdoc'
 
-sys.path.append(os.path.abspath('source/_themes'))
-html_theme_path = ['_themes']
-html_theme = 'sphinx-theme-okfn'
-html_theme_options = {
-        'logo_icon': '_static/logo-g4l.png',
-        'show_okfn_logo' : False,
-        'git_repo' : 'http://github.com/gateway4labs/',
-#        'google_analytics_id': '',
-}
-
-html_sidebars = {
-    '**':  ['localtoc.html', 'globaltoc.html']
-}
+# sys.path.append(os.path.abspath('source/_themes'))
+# html_theme_path = ['_themes']
+# html_theme = 'sphinx-theme-okfn'
+# html_theme_options = {
+#         'logo_icon': '_static/logo-g4l.png',
+#         'show_okfn_logo' : False,
+#         'git_repo' : 'http://github.com/gateway4labs/',
+# }
+# 
+# html_sidebars = {
+#     '**':  ['localtoc.html', 'globaltoc.html']
+# }
 
 
 # Theme options are theme-specific and customize the look and feel of a theme
