@@ -7,13 +7,8 @@ Right now, different RLMSs require a plugin written in Python so that the RLMS c
 
     #. Weblab Deusto, available `here <https://github.com/gateway4labs/rlms_weblabdeusto>`_.
     #. FCEIA, Universidad Nacional del Rosario, available `here <https://github.com/gateway4labs/rlms_unr>`_.
+    #. PhET, available `here <https://github.com/gateway4labs/rlms_phet>`_.
     #. MIT iLabs, available `here <https://github.com/gateway4labs/rlms_ilabs/>`_.
-
-In order to provide a versatile way to include new RLMSs, a RESTful interface is being implemented (this is `issue 30 <https://github.com/gateway4labs/labmanager/issues/30>`_). This interface would consume a REST service offering the RLMS. The advantages of using such interface are:
-
-    #. No need to implement a plugin in Python for new RLMSs -- any programming language (LabVIEW, Java, ...) could be used. 
-    #. No hard-coded stuff in the LabManager -- no need to modify the code of LabManager for every new type of RLMS that is going to be supported. 
-    #. Same functionality and power as the plugins approach.
 
 Creation of a new RLMS in the LabManager
 ----------------------------------------
@@ -40,17 +35,4 @@ When the REST API is ready, the creation of RLMSs in the LabManager will be a th
 
     A *Finish* button will be placed in this view. Once this button is clicked, the aforementioned parameters will be checked, and the LabManager admin will be informed whether they are correct or not. If they are correct, the new RLMS will be inserted in the database; otherwise, the Labmanager admin will be asked to fix them, or cancel the RLMS creation.
     
-API functionalities
--------------------
-
-In order to implement this new feature, RLMSs should implement the following list of functions:
-
-    #. get_rlms_param_list: Returns the list of parameters needed by the RLMSs to work properly.
-    #. get_lab_list: Returns the list of laboratories.
-    #. get_lab_capacities: Returns the list of capacities of a given lab.
-    #. get_lab_version: Returns the version of a given lab.
-    #. reserve_lab: Performs the reservation of a lab.
-
-
-
 

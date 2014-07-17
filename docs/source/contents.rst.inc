@@ -54,6 +54,7 @@ each RLMS repository*
 .. toctree::
    :maxdepth: 2
 
+   rlms_admin
    
 
 Instructors
@@ -81,8 +82,7 @@ RLMS developers
 .. toctree::
    :maxdepth: 2
    
-   rlms_api
-   rlms_developers
+
 
 
 LMS/CMS/PLE developers
