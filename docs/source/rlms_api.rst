@@ -1,4 +1,0 @@
-RLMS API
-========
-
-blah blah

@@ -1,11 +1,3 @@
-.. note::
-
-    We\'re restructuring the documentation. This is just a doc
-    proposal at this stage. We\'ve written in italics what each
-    section should contain, and the already indexed contents are
-    those which were already written, but probably will need to be 
-    rewritten.
-
 .. contents:: Table of Contents
 
 General
@@ -88,7 +80,8 @@ RLMS developers
 
 .. toctree::
    :maxdepth: 2
-
+   
+   rlms_api
    rlms_developers
 
 
