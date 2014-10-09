@@ -65,7 +65,25 @@ There are four authentication levels that will be refered in this section:
 Configuration management
 ........................
 
-In some RLMS, certain settings are needed. For example, in some cases, the credentials of the laboratory or things like that are required. In other cases, there is no possible configuration. In PhET, for example, the URL itself is hardcoded, and there is no authentication or similar, so there is no need for configuring anything.
+In some RLMS, certain settings are needed. There are three typical scenarios:
+
+1. No configuration is required. For example, PhET virtual laboratories do not need anything.
+2. A single system must be configured. This is the typical scenario: there is a remote laboratory in one location, not replicated anywhere else.
+3. Multiple systems exists and must be configured. In the case of WebLab-Deusto, iLab Shared Architecture, and in the future other options (e.g., ViSHub), the plug-in might need details to identify what system.
+
+In any case, if something needs to be stored, it will be stored in the plug-in side. The Labmanager does not store the configuration. This way, if secrets are stored or so, they do not need to be stored in the labmanager. This is especially useful if the Labmanager is located in other institution.
+
+The way this configuration is stored is irrelevant. It could be a database, JSON or XML files, hardcoded or whatever the plug-in developer finds more convenient.
+
+The setup process
+.................
+
+The Labmanager administrator goes to the Labmanager administration panel, to the RLMS section: 
+
+There, the administartor clicks on Create, and among the following options, HTTP plug-in is selected:
+
+Then, several information must be filled. The particular questions may vary in the future. Basically, a URL with documentation on the RLMS is shown.
+
 
 Python version
 ^^^^^^^^^^^^^^
