@@ -6,7 +6,7 @@
 Welcome to gateway4labs's documentation!
 ========================================
 
-Welcome to the gateway4labs project documentation.
+Welcome to the gateway4labs project documentation. Gateway4labs is a Go-Lab initiative on which relies its Smart Gateway for integrating external laboratories.
 
 .. image:: /_static/logo.png
    :width: 200 px
