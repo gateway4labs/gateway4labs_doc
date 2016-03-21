@@ -98,4 +98,10 @@ LabManager developers
 .. toctree::
    :maxdepth: 2
 
+Professional services
+`````````````````````
 
+.. toctree::
+   :maxdepth: 2
+
+`LabsLand <http://labsland.com>`_ provides professional services on top of gateway4labs, such as consultancy services.
